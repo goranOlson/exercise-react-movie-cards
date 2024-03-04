@@ -15,7 +15,7 @@
     border-radius: 13px;
     box-shadow: 2px 2px 8px #aaa;
 }
-.add-movie-card h1 {
+.add-movie-card h2 {
     font-size: 24px;
     text-align: center;
 }
@@ -30,9 +30,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.add-movie-card .add-row.buttons button {
-    padding: 4px 16px;
-}
+
 
 .add-movie-card .row-rating {
     display: grid;
@@ -44,7 +42,10 @@
     text-align: right;
 }
 
-.add-movie-card input {
+.add-movie-card input,
+.add-movie-card textarea {
     padding: 3px 4px 2px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
     font-size: 16px;
 }

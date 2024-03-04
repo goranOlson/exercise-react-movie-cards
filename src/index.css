@@ -2,5 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-block: 30px;
+    text-align: center;
+    color: yellow;
+    text-shadow: 0px 1px 20px #000;
+}
+
+button {
+    padding: 4px 16px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+input,
+textarea {
+    padding: 3px 4px 2px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 16px;
 }

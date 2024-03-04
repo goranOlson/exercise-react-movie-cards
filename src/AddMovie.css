@@ -1,0 +1,50 @@
+
+
+
+
+.add-movie-card {
+    display: flex;
+    flex-direction: column;
+    margin-block: 30px;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    background: #faffd5;
+    border: 1px solid #ddd;
+    border-radius: 13px;
+    box-shadow: 2px 2px 8px #aaa;
+}
+.add-movie-card h1 {
+    font-size: 24px;
+    text-align: center;
+}
+.add-movie-card .add-row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    margin-block: 0.5rem;
+}
+.add-movie-card .add-row.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.add-movie-card .add-row.buttons button {
+    padding: 4px 16px;
+}
+
+.add-movie-card .row-rating {
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-rows: auto;
+}
+
+.add-movie-card .row-rating span:last-of-type {
+    text-align: right;
+}
+
+.add-movie-card input {
+    padding: 3px 4px 2px;
+    font-size: 16px;
+}

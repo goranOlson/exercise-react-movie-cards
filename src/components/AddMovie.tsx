@@ -1,32 +1,31 @@
 import { ReactElement, useState } from "react"
+import { IMovieCard } from "../App";
 import './AddMovie.css'
 
+export interface IAddMovieProps {
+    addMovieCard: (movie: IMovieCard) => void;
+}
 
-export function AddMovie(): ReactElement {
-    const [title, setTitle] = useState("");  // Title...
+export function AddMovie(props: IAddMovieProps): ReactElement {
+    const [title, setTitle] = useState("");
     const [rating, setRating] = useState(3);
-    const [genre, setGenre] = useState("");  // drama
-    const [description, setDescription] = useState("");  // Description...
-
+    const [genre, setGenre] = useState("");
+    const [description, setDescription] = useState("");
 
     const handelOnSubmit: React.FormEventHandler<HTMLFormElement> = (event) => {
         event.preventDefault();
-        // console.log('--> handleOnSubmit()');
 
-        //--- Check data ---
         if (title) {  //  title && genre && description  // 
-            const newMovie = {
+            const movie: IMovieCard = {
+                id: 0,
                 title: title,
                 rating: rating,
                 genre: genre,
                 description: description
             }
-            console.log('newMovie: ', newMovie);
 
-            //--- Send data... ---
-
-            
-            handleOnReset();
+            props.addMovieCard(movie);
+            handleOnReset();  // Empty form
         }
     }
 
@@ -37,8 +36,6 @@ export function AddMovie(): ReactElement {
         setGenre("");
         setDescription("");
     }
-
-
 
     return <>
         <form onSubmit={handelOnSubmit}>

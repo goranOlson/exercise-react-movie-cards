@@ -1,0 +1,16 @@
+
+.movie-listing {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.9rem;
+    width: 100%;
+    max-width: 400px;
+    margin-inline: auto;
+    margin-block: 50px;
+}
+
+.movie-listing > h1 {
+    margin-block: 0.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+.app {
+    padding-inline: 0.5rem;
+}
+
+h1.main {
+    font-size: 30px;
+    margin-block: 30px;
+    text-align: center;
+    color: yellow;
+    text-shadow: 0px 1px 20px #000;
+}

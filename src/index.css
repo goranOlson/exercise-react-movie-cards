@@ -6,14 +6,6 @@
     font-size: 18px;
 }
 
-h1 {
-    font-size: 30px;
-    margin-block: 30px;
-    text-align: center;
-    color: yellow;
-    text-shadow: 0px 1px 20px #000;
-}
-
 button {
     padding: 4px 16px;
     border: 1px solid #aaa;

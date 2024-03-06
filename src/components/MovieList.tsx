@@ -14,12 +14,12 @@ export function MovieList(props: IMovieListProps): JSX.Element {
     return <>
         <section className="movie-listing">
             <h1>Movie Cards</h1>
-        { movieList.map((movieCard) => {
-          return <>
-          <MovieCard movieCard={movieCard} deleteMovieCard={props.deleteMovieCard} key={movieCard.id} />
-          </>
-        }) 
-      }
-      </section>
+            { movieList.map((movieCard, index) => {
+              return (
+                <MovieCard key={index} movieCard={movieCard} deleteMovieCard={props.deleteMovieCard} />
+                )
+              }) 
+            }
+        </section>
     </>
 }
